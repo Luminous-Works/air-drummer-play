@@ -10,9 +10,16 @@ This repository holds only the built website that GitHub Pages serves.
 **On a Meta Quest:** open the link in the Quest Browser, turn hand tracking on, press **Enter XR**, sit down,
 and **pinch** your thumb and index finger to pull a drumstick out of the air. Swing it down onto a pad to play it.
 
-**On a computer:** press **Enter XR** (click again if nothing happens). A virtual headset opens in a virtual kitchen
-with hand tracking selected. Move a hand with the panels at the bottom of the page or the colored handles, and set
-**Pinch** to 1 to hold a stick.
+**On a computer** (no headset or webcam needed): press **Enter XR** (click again if nothing happens). A virtual headset
+opens in a virtual kitchen. Play with the keyboard, two rows laid out like the kit, left to right:
+
+```
+R  T  Y  U     crash, tom 1, tom 2, ride
+F  G  H  J     hi-hat, snare (G or H), floor tom
+```
+
+**Space** pauses, the **left and right arrows** change the stage, the **up and down arrows** change the tempo, and
+**Enter** skips the first lesson. A letter floats over each pad.
 
 - Colored notes fall onto the pads; hit a pad as its note lands. Professor Beat Bop teaches a short first lesson.
 - The ROCK gauge rises when you play well and drops when you miss; the crowd reacts to it.
