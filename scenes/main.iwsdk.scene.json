@@ -1,0 +1,113 @@
+{
+  "components": {
+    "com.iwsdk.components.IBLGradient": {
+      "equator": [
+        0.78,
+        0.78,
+        0.84,
+        1
+      ],
+      "ground": [
+        0.5,
+        0.52,
+        0.58,
+        1
+      ],
+      "intensity": 0.2025,
+      "sky": [
+        0.72,
+        0.7,
+        0.8,
+        1
+      ]
+    }
+  },
+  "environment": {
+    "exposure": 1.2,
+    "shadowMapType": "pcf",
+    "shadows": true,
+    "toneMapping": "aces"
+  },
+  "nodes": [
+    {
+      "id": "shadow-catcher",
+      "framingRole": "support",
+      "name": "Floor Shadow",
+      "transform": {
+        "position": [
+          0,
+          0.001,
+          -0.4
+        ]
+      },
+      "components": {
+        "ShadowCatcher": {
+          "size": [
+            3,
+            3
+          ],
+          "opacity": 0.3
+        }
+      }
+    },
+    {
+      "components": {
+        "DirectionalLight": {
+          "castShadow": true,
+          "color": [
+            1,
+            0.945,
+            0.87,
+            1
+          ],
+          "intensity": 2.3,
+          "shadowBias": -0.0004,
+          "shadowCameraFar": 24,
+          "shadowCameraNear": 2,
+          "shadowCameraSize": 8,
+          "shadowMapSize": "1024",
+          "shadowNormalBias": 0.02,
+          "shadowRadius": 7
+        }
+      },
+      "id": "key-light",
+      "name": "Key Light",
+      "transform": {
+        "position": [
+          -2.3541,
+          11.2763,
+          1.762
+        ],
+        "rotationDeg": [
+          -73.3982,
+          -11.3134,
+          0
+        ]
+      }
+    },
+    {
+      "components": {
+        "HemisphereLight": {
+          "groundColor": [
+            0.592,
+            0.608,
+            0.651,
+            1
+          ],
+          "intensity": 1.15,
+          "skyColor": [
+            0.78,
+            0.83,
+            0.96,
+            1
+          ]
+        }
+      },
+      "id": "fill-light",
+      "name": "Fill Light"
+    }
+  ],
+  "resources": {},
+  "units": "meters",
+  "version": "iwsdk.scene.v1"
+}

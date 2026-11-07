@@ -1,0 +1,120 @@
+[
+  {
+    "stage": "mardi-gras",
+    "variant": "a",
+    "bpm": 112,
+    "file": "audio/stages/mardi-gras-a.ogg",
+    "seconds": 75.86,
+    "seed": 1010,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "mardi-gras",
+    "variant": "b",
+    "bpm": 112,
+    "file": "audio/stages/mardi-gras-b.ogg",
+    "seconds": 75.86,
+    "seed": 1027,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "cinco-de-mayo",
+    "variant": "a",
+    "bpm": 118,
+    "file": "audio/stages/cinco-de-mayo-a.ogg",
+    "seconds": 72.15,
+    "seed": 1013,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "cinco-de-mayo",
+    "variant": "b",
+    "bpm": 118,
+    "file": "audio/stages/cinco-de-mayo-b.ogg",
+    "seconds": 72.15,
+    "seed": 1030,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "afrobeats",
+    "variant": "a",
+    "bpm": 104,
+    "file": "audio/stages/afrobeats-a.ogg",
+    "seconds": 81.46,
+    "seed": 1009,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "afrobeats",
+    "variant": "b",
+    "bpm": 104,
+    "file": "audio/stages/afrobeats-b.ogg",
+    "seconds": 81.46,
+    "seed": 1026,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "calypso",
+    "variant": "a",
+    "bpm": 100,
+    "file": "audio/stages/calypso-a.ogg",
+    "seconds": 84.6,
+    "seed": 1007,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "calypso",
+    "variant": "b",
+    "bpm": 100,
+    "file": "audio/stages/calypso-b.ogg",
+    "seconds": 84.6,
+    "seed": 1024,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "salsa-night",
+    "variant": "a",
+    "bpm": 125,
+    "file": "audio/stages/salsa-night-a.ogg",
+    "seconds": 68.28,
+    "seed": 1011,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "salsa-night",
+    "variant": "b",
+    "bpm": 125,
+    "file": "audio/stages/salsa-night-b.ogg",
+    "seconds": 68.28,
+    "seed": 1028,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "st-patricks",
+    "variant": "a",
+    "bpm": 96,
+    "meter": "6/8",
+    "file": "audio/stages/st-patricks-a.ogg",
+    "seconds": 61.0,
+    "seed": 2000
+  },
+  {
+    "stage": "st-patricks",
+    "variant": "b",
+    "bpm": 96,
+    "meter": "6/8",
+    "file": "audio/stages/st-patricks-b.ogg",
+    "seconds": 61.0,
+    "seed": 2031
+  }
+]
