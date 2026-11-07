@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -7,10 +7,179 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="icon" href="data:," />
-    <title>iwsdk-instrument</title>
+    <title>Air Drummer</title>
+    <style>
+      #help-btn {
+        position: fixed;
+        top: 12px;
+        left: 12px;
+        z-index: 50;
+        padding: 8px 14px;
+        border: 2px solid #ffd166;
+        border-radius: 999px;
+        background: #16172a;
+        color: #ffd166;
+        font: 700 14px/1 system-ui, sans-serif;
+        cursor: pointer;
+      }
+      #help-btn:hover,
+      #help-btn:focus-visible {
+        background: #ffd166;
+        color: #16172a;
+        outline: none;
+      }
+      #help {
+        position: fixed;
+        inset: 0;
+        z-index: 60;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        background: rgba(10, 10, 25, 0.72);
+        font: 15px/1.5 system-ui, sans-serif;
+      }
+      #help.open {
+        display: flex;
+      }
+      #help .card {
+        box-sizing: border-box;
+        width: min(720px, 100%);
+        max-height: 100%;
+        overflow-y: auto;
+        padding: 20px 24px 24px;
+        border-radius: 16px;
+        background: #16172a;
+        color: #e8e9f6;
+      }
+      #help h2 {
+        margin: 0 0 4px;
+        color: #ffd166;
+        font-size: 26px;
+      }
+      #help h3 {
+        margin: 18px 0 6px;
+        color: #ff7bb0;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+      #help p,
+      #help ul,
+      #help ol {
+        margin: 6px 0;
+      }
+      #help ul,
+      #help ol {
+        padding-left: 22px;
+      }
+      #help li {
+        margin: 3px 0;
+      }
+      #help b {
+        color: #ffffff;
+      }
+      #help .lede {
+        color: #b9bbd6;
+      }
+      #help-close {
+        float: right;
+        margin: 0 0 8px 12px;
+        padding: 6px 12px;
+        border: 0;
+        border-radius: 999px;
+        background: #ffd166;
+        color: #16172a;
+        font: 700 14px/1 system-ui, sans-serif;
+        cursor: pointer;
+      }
+    </style>
     <script type="module" crossorigin src="./assets/index-CjIPUlHB.js"></script>
   </head>
   <body style="margin: 0">
     <div id="scene-container"></div>
+
+    <button id="help-btn" type="button" aria-haspopup="dialog">How to play</button>
+    <div id="help" role="dialog" aria-modal="true" aria-labelledby="help-title">
+      <div class="card">
+        <button id="help-close" type="button">Close</button>
+        <h2 id="help-title">Air Drummer</h2>
+        <p class="lede">
+          A hands-only AR drum game. Sit on your couch or in a seat, pinch a drumstick out of the air,
+          and play along with Professor Beat Bop.
+        </p>
+
+        <h3>Start</h3>
+        <ul>
+          <li>
+            <b>On a Meta Quest:</b> open this page in the Quest Browser, make sure hand tracking is on,
+            and press <b>Enter XR</b>. The game appears in your room.
+          </li>
+          <li>
+            <b>On a computer:</b> press <b>Enter XR</b> (click again if nothing happens). A virtual headset in a
+            virtual kitchen opens, with your hands set up as tracked hands. Use the panels at the bottom, or
+            drag the colored handles, to move a hand and set its <b>Pinch</b> to 1 to grab a stick.
+          </li>
+          <li>Sit down. After about a second the kit settles at lap height, the snare between your knees.</li>
+        </ul>
+
+        <h3>Play</h3>
+        <ul>
+          <li><b>Pinch</b> your thumb and index finger together to hold a drumstick. Swing it <b>down onto a pad</b> to hit it.</li>
+          <li>Colored notes fall onto the pads. Hit a pad as its note lands. A short lesson from the Professor starts you off.</li>
+          <li>The <b>ROCK</b> gauge rises when you play well and drops when you miss; the crowd reacts to it.</li>
+          <li>Finish songs to earn <b>stars and XP</b>. Levels unlock stage decorations.</li>
+        </ul>
+
+        <h3>Controls</h3>
+        <ul>
+          <li><b>Menu:</b> pinch both hands together for a moment. Swipe left or right to change pages: stages, extra drums, percussion, kit settings, progress. Tap a stage; tap it again to switch between its A and B tracks.</li>
+          <li><b>Transport bar</b> (at cymbal height): back 5 seconds, pause, forward 5 seconds, EDIT. The row under it, with &minus; and +, slows or speeds the song for practice.</li>
+          <li><b>Thumb flicks</b> (curl your index finger): tap to pause, swipe left or right to jump 5 seconds, swipe forward or back to change the tempo.</li>
+          <li><b>EDIT:</b> floating instruments appear. Pinch one to pull it out, drop it on a pad to swap it in, use both hands to resize.</li>
+          <li><b>Kit settings:</b> FIT TO ME re-measures your seat, COMPACT shrinks the kit for tight spaces, LEFT-HANDED mirrors it.</li>
+        </ul>
+
+        <h3>Hidden</h3>
+        <p>
+          Three <b>golden records</b> are hiding in your space. Look straight at one for a moment to find it; a soft chime
+          guides you when you are close. Each gives bonus XP and 20 seconds of <b>Star Power</b>: double score, gold notes and
+          a crowd gone wild.
+        </p>
+      </div>
+    </div>
+    <script>
+      (function () {
+        var help = document.getElementById('help');
+        var open = function () {
+          help.classList.add('open');
+          document.getElementById('help-close').focus();
+        };
+        var close = function () {
+          help.classList.remove('open');
+          try {
+            window.localStorage.setItem('airdrummer.helpSeen', '1');
+          } catch (e) {
+            // Storage blocked: the card will simply show again next visit.
+          }
+        };
+        document.getElementById('help-btn').addEventListener('click', open);
+        document.getElementById('help-close').addEventListener('click', close);
+        help.addEventListener('click', function (e) {
+          if (e.target === help) close();
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && help.classList.contains('open')) close();
+        });
+        // First visit: show the card once, so nobody is left guessing.
+        var seen = false;
+        try {
+          seen = window.localStorage.getItem('airdrummer.helpSeen') === '1';
+        } catch (e) {
+          seen = false;
+        }
+        if (!seen) open();
+      })();
+    </script>
   </body>
 </html>
