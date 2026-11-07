@@ -19,7 +19,7 @@ F  G  H  J     hi-hat, snare (G or H), floor tom
 ```
 
 **Space** pauses, the **left and right arrows** change the stage, the **up and down arrows** change the tempo, and
-**Enter** skips the first lesson. A letter floats over each pad. You can also **click a pad with the mouse** (a stick follows the pointer), press **Q** to see the kit from overhead, the side and the front, and press **B** for the big kit (splash, second crash, china, a third tom, cowbell and wind chimes). In a headset the same switch is on the menu's settings page.
+**Enter** skips the first lesson. A letter floats over each pad. You can also **click a pad with the mouse** (a stick follows the pointer), press **Q** to see the kit from overhead, the side and the front, **drag with the right mouse button** to look around, press **E** to show or hide the emulator's hand handles, and press **B** for the big kit (splash, second crash, china, a third tom, cowbell and wind chimes). In a headset the same switch is on the menu's settings page.
 
 - Colored notes fall onto the pads; hit a pad as its note lands. Professor Beat Bop teaches a short first lesson.
 - The ROCK gauge rises when you play well and drops when you miss; the crowd reacts to it.
