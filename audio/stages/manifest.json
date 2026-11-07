@@ -80,6 +80,46 @@
     "outro_bars": 2
   },
   {
+    "stage": "disco-fever",
+    "variant": "a",
+    "bpm": 120,
+    "file": "audio/stages/disco-fever-a.ogg",
+    "seconds": 71.0,
+    "seed": 1011,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "disco-fever",
+    "variant": "b",
+    "bpm": 120,
+    "file": "audio/stages/disco-fever-b.ogg",
+    "seconds": 71.0,
+    "seed": 1028,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "rock-riot",
+    "variant": "a",
+    "bpm": 116,
+    "file": "audio/stages/rock-riot-a.ogg",
+    "seconds": 73.34,
+    "seed": 1009,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "rock-riot",
+    "variant": "b",
+    "bpm": 116,
+    "file": "audio/stages/rock-riot-b.ogg",
+    "seconds": 73.34,
+    "seed": 1026,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
     "stage": "salsa-night",
     "variant": "a",
     "bpm": 125,
