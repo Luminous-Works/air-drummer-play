@@ -140,6 +140,66 @@
     "outro_bars": 2
   },
   {
+    "stage": "bossa-nova",
+    "variant": "a",
+    "bpm": 126,
+    "file": "audio/stages/bossa-nova-a.ogg",
+    "seconds": 67.76,
+    "seed": 1010,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "bossa-nova",
+    "variant": "b",
+    "bpm": 126,
+    "file": "audio/stages/bossa-nova-b.ogg",
+    "seconds": 67.76,
+    "seed": 1027,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "modern-pop",
+    "variant": "a",
+    "bpm": 104,
+    "file": "audio/stages/modern-pop-a.ogg",
+    "seconds": 81.46,
+    "seed": 1010,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "modern-pop",
+    "variant": "b",
+    "bpm": 104,
+    "file": "audio/stages/modern-pop-b.ogg",
+    "seconds": 81.46,
+    "seed": 1027,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "modern-rock",
+    "variant": "a",
+    "bpm": 132,
+    "file": "audio/stages/modern-rock-a.ogg",
+    "seconds": 64.82,
+    "seed": 1011,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
+    "stage": "modern-rock",
+    "variant": "b",
+    "bpm": 132,
+    "file": "audio/stages/modern-rock-b.ogg",
+    "seconds": 64.82,
+    "seed": 1028,
+    "bars": 32,
+    "outro_bars": 2
+  },
+  {
     "stage": "st-patricks",
     "variant": "a",
     "bpm": 96,
